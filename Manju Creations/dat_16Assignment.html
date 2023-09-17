@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day16</title>
+</head>
+<style>
+    body{
+        background-image: url("https://img.freepik.com/free-vector/realistic-style-technology-particle-background_23-2148426704.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    h1:hover{
+        background-color:  #2980b9;
+    }
+    input{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background-color: transparent;
+        color: rgb(15, 15, 17);
+        border-bottom: solid 1px black;
+    }
+    input::placeholder{
+        color: rgb(32, 28, 28);
+    }
+    input:active{
+        background-color: green;
+    }
+    input[type="email"],
+    input[type="password"]{
+        width: 90%;
+        padding: 10px;
+        border-radius: 3px;
+    }
+    label{
+        display: block;
+        font-weight: bold;
+    }
+    input[type="submit"]{
+        background-color: rgb(211, 29, 114);
+        width:90%;
+        color: #141212;
+        cursor: pointer;
+        padding: 7px;
+        border-radius: 10px;
+    }
+    input[type="submit"]:hover{
+        background-color: #2980b9;
+    }
+    #username:valid{
+        background-color: green;
+    } 
+    #username:invalid{
+        border-color: red;
+    }   
+    
+    div{
+        background-color:#fff;
+        border-radius: 15px;
+        width: 300px;
+        padding: 20px;
+        border: 2px solid rgb(237, 206, 206);
+        margin-top: 90px;
+        margin-left: 500px;
+        
+    }
+</style>
+<body>
+    <div>
+        <h1 style="text-align: center;">Login</h1>
+        <label for="username">Email</label>
+        <input type="Email" name="username" id="username" placeholder="Type your Username" required pattern="[A-Za-z_]{0,20}"><br><br>
+        <label for="pass">Password</label>
+        <input type="password" name="pass" id="name" placeholder="Type your password" required><br><br>
+        <input type="submit" value="LOG IN">
+        <p>Dont have an account? <a href="#">Signup</a></p>
+    </div>
+</body>
+</html>
